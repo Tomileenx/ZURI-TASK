@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    font-family: "poppins", sans-serif;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side {
+    color: #fff;
+    margin-top: 30px;
+    width: 35%;
+}
+
+.left-side h1 {
+    line-height: 35px;
+    font-size: 35px;
+    width: 100%;
+}
+
+.left-side p {
+    margin-top: 20px;
+    width: 90%;
+    font-size: 14px;
+}
+
+.right-side {
+    width: 32%;
+}
+
+.right-side > p {
+    background: hsl(248, 32%, 49%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.right-side > p > span {
+    color: #fff;
+    font-weight: lighter;
+}
+
+.container {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 0px solid;
+    padding: 12px;
+    margin-top: 10px;
+    padding: 15px 25px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container > p {
+    font-size: 7px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: hsl(246, 25%, 77%);
+    font-weight: bold;
+}
+
+.container > p > span {
+    color: hsl(154, 59%, 51%);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    color: hsl(154, 59%, 51%);
+}
+
+input:focus {
+    border: 2px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 375px){
+    body {
+        flex-flow: column;
+        font-size: 14px;
+        margin: 40px auto;
+        padding: 5px 0;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-image: url("img/bg-intro-mobile.png");
+    }
+
+    .left-side {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .left-side h1 {
+        text-align: center;
+        font-size: 25px;
+        word-spacing: -1px;
+        line-height: 30px;
+    }
+
+    .left-side p {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .right-side > p > span {
+        font-size: 14px;
+    }
+
+    .right-side{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .right-side > p {
+        padding: 15px;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+        width: 100%;
+        padding: 5px 20px 20px;
+    }
+
+    .container > p {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
